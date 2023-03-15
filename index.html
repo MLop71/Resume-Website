@@ -7,75 +7,138 @@
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="./styles.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: '#da373d',
+                        },
+                    },
+                },
+            }
+        </script>
     </head>
-    <body>
-        <div id="container--main">
-            <section id="wrapper--hero" class="section--page">
-                <img id="profile-pic" src="./assets/images/0.jpeg" />
+    <body class="dark bg-gray-900">
+        <div id="container--main" class="max-w-[700px] my-0 mx-auto">
+            <section id="wrapper--hero" class="py-0 flex items-center gap-16">
+                <img
+                    id="profile-pic"
+                    src="./assets/images/0.jpeg"
+                    class="max-w-[300px] rounded-[200px] w-[200px] h-[200px]"
+                />
                 <div>
-                    <h1 id="username">Marco Lopez</h1>
-                    <p id="bio">Software developer</p>
-                    <p id="email">
+                    <h1 id="username" class="text-4xl">Marco Lopez</h1>
+                    <p id="bio" class="font-light text-neutral-400 text-base">
+                        Software developer
+                    </p>
+                    <p id="email" class="no-underline font-light text-cyan-400">
                         <a href="mailto:marco@openlandmark.io"
                             >marco@openlandmark.io</a
                         >
                     </p>
                 </div>
             </section>
-            <section class="section--page">
-                <div id="socials--lists">
-                    <a href="https://github.com/MLop71" target="_blank"
+            <section class="py-4 px-0">
+                <div
+                    id="socials--lists"
+                    class="flex justify-center gap-x-8 flex-wrap"
+                >
+                    <a
+                        href="https://github.com/MLop71"
+                        target="_blank"
+                        class="no-underline font-light text-cyan-400"
                         >GitHub</a
-                    ><span>•</span>
+                    ><span class="text-neutral-400 text-base">•</span>
                     <a
                         href="https://www.linkedin.com/in/cx-marco-lopez/"
                         target="_blank"
+                        class="no-underline font-light text-cyan-400"
                         >LinkedIn</a
-                    ><span>•</span>
-                    <a href="./assets/Lopez Marco_Resume.pdf" target="_blank"
+                    ><span class="text-neutral-400 text-base">•</span>
+                    <a
+                        href="./assets/Lopez Marco_Resume.pdf"
+                        target="_blank"
+                        class="no-underline font-light text-cyan-400"
                         >Resume</a
                     >
                 </div>
             </section>
-            <section class="section--page">
+            <section class="py-4 px-0">
                 <h2>Skills & Qualification</h2>
-                <ul id="qualifications--list">
-                    <li>
+                <ul id="qualifications--list" class="prose pt-0 pb-4">
+                    <li class="pl-4 leading-8 text-neutral-400 text-base">
                         Strong understanding of JavaScript and proficiency in
                         React.js and its concepts, such as JSX, components,
                         state, and props
                     </li>
-                    <li>
+                    <li class="pl-4 leading-8 text-neutral-400 text-base">
                         Experience with development tools, such as Git and
                         integrated development environments (IDEs)
                     </li>
-                    <li>
+                    <li class="pl-4 leading-8 text-neutral-400 text-base">
                         Understanding of software development life cycle (SDLC)
                         and Agile development methodologies
                     </li>
                 </ul>
             </section>
-            <section class="section--page">
+            <section class="py-4 px-0">
                 <h2>Tech Stack</h2>
-                <ul id="techstack--list">
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>NextJS</li>
-                    <li>GitHub Actions</li>
-                    <li>Netlify</li>
-                    <li>Vercel</li>
+                <ul id="techstack--list" class="list-none flex flex-wrap gap-4">
+                    <li
+                        class="border border-solid rounded-xl boder-gray-500 py-2 px-9 leading-8 text-neutral-400 text-base"
+                    >
+                        JavaScript
+                    </li>
+                    <li
+                        class="border border-solid rounded-xl boder-gray-500 py-2 px-9 leading-8 text-neutral-400 text-base"
+                    >
+                        React
+                    </li>
+                    <li
+                        class="border border-solid rounded-xl boder-gray-500 py-2 px-9 leading-8 text-neutral-400 text-base"
+                    >
+                        NextJS
+                    </li>
+                    <li
+                        class="border border-solid rounded-xl boder-gray-500 py-2 px-9 leading-8 text-neutral-400 text-base"
+                    >
+                        GitHub Actions
+                    </li>
+                    <li
+                        class="border border-solid rounded-xl boder-gray-500 py-2 px-9 leading-8 text-neutral-400 text-base"
+                    >
+                        Netlify
+                    </li>
+                    <li
+                        class="border border-solid rounded-xl boder-gray-500 py-2 px-9 leading-8 text-neutral-400 text-base"
+                    >
+                        Vercel
+                    </li>
                 </ul>
             </section>
-            <section class="section--page">
+            <section class="py-4 px-0">
                 <h2>Work History</h2>
                 <ul id="work history">
-                <div class="line-break"></div>
-                
-                <div class="card--work-history">
-                    <strong> DEVELOPER ADVOCATE
-                    <p>11/2021 - present</p>
-                    <p>Worked on making Agoras Web Based SDK more accessible through video tutorials, articles, demo projects and event based training. Also building out React UI components & leading a team to re-design Agoras documentation and api reference.</p>
-                </div>
+                    <div class="line-break"></div>
+
+                    <div class="border-left-0 pl-0">
+                        <strong> DEVELOPER ADVOCATE</strong>
+                        <p class="text-neutral-400 text-base">
+                            11/2021 - present
+                        </p>
+                        <p
+                            class="prose dark:prose-invert text-neutral-400 text-base"
+                        >
+                            Worked on making Agoras Web Based SDK more
+                            accessible through video tutorials, articles, demo
+                            projects and event based training. Also building out
+                            React UI components & leading a team to re-design
+                            Agoras documentation and api reference.
+                        </p>
+                    </div>
                 </ul>
             </section>
         </div>

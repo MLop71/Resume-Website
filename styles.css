@@ -22,105 +22,105 @@
 }
 
 * {
-    font-family: 'Readex Pro';
+    /* font-family: 'Readex Pro'; */
     line-height: 1.5em;
     box-sizing: border-box;
     color: var(--mainTextColor);
 }
 
-body {
+/* body {
     background-color: var(--mainBgColor);
-}
+} */
 
-p,
-span,
-li {
+/* p,
+span, */
+/* li {
     color: var(--secondaryTextColor);
     font-size: 1em;
-}
+} */
 
-a {
+/* a {
     text-decoration: none;
     color: var(--mainLinkColor);
     font-weight: 300;
-}
+} */
 
-li {
+/* li {
     line-height: 1.9em;
-}
+} */
 
-#container--main {
+/* #container--main {
     max-width: 700px;
     margin: 0 auto;
-}
+} */
 
-.section--page {
+/* .section--page {
     padding: 1em 0;
-}
+} */
 
-#wrapper--hero {
+/* #wrapper--hero {
     display: flex;
     align-items: center;
     gap: 4em;
-}
-#profile-pic {
+} */
+/* #profile-pic {
     max-width: 300px;
     border-radius: var(--profilePicSize);
     width: var(--profilePicSize);
     height: var(--profilePicSize);
-}
+} */
 
-#username {
+/* #username {
     font-size: 2.5em;
     line-height: 1em;
-}
+} */
 
-#bio {
+/* #bio {
     font-weight: 300;
-}
-#socials--lists {
+} */
+/* #socials--lists {
     display: flex;
     justify-content: center;
     column-gap: 2em;
     flex-wrap: wrap;
-}
+} */
 
-#qualifications--list {
+/* #qualifications--list {
     padding: 0 1em;
-}
+} */
 
-#qualifications--list li {
+/* #qualifications--list li {
     padding-left: 1em;
-}
+} */
 
-#techstack--list {
+/* #techstack--list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
-}
+} */
 
-#techstack--list li {
+/* #techstack--list li {
     border: 1px solid var(--mainBorderColor);
     padding: 0.5em 2.5em;
     border-radius: 0.5em;
-}
-@media (max-width: 600px) {
+} */
+/* @media (max-width: 600px) {
     #wrapper--hero {
         flex-direction: column;
         gap: 1em;
-    }
+    } */
 
-    #profile-pic {
+/* #profile-pic {
         width: 200px;
         height: 200px;
-    }
-    .section--page {
+    } */
+/* .section--page {
         padding-top: 1em;
         padding-bottom: 1em;
-    }
-    .card--work-history {
+    } */
+/* .card--work-history {
         border-left: none;
         padding-left: 0;
-    }
-}
+    } */
+/* } */
